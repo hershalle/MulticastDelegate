@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         // Dealloc consumer2 to test that MulticastDelegate doesn't retain it.
         Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { (timer) in
             self.consumer2 = nil
+            print("consumer2 is nil")
         }
     }
 }
