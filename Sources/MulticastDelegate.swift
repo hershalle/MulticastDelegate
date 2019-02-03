@@ -25,9 +25,11 @@ public struct MulticastDelegate<T> {
         delegates.remove(delegate as AnyObject)
     }
 
-    public func invoke(_ invocation: (T) -> ()) {
-        for delegate in delegates.allObjects {
-            invocation(delegate as! T)
+    public func invoke(on queue: DispatchQueue = .main, invocation: @escaping (T) -> ()) {
+        queue.async { 
+            for delegate in self.delegates.allObjects {
+                invocation(delegate as! T)
+            }
         }
     }
 }
