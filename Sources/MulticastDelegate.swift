@@ -25,7 +25,7 @@ public struct MulticastDelegate<T> {
         delegates.remove(delegate as AnyObject)
     }
 
-    public func invoke(_ invocation: @escaping (T) -> ()) {
+    public func invoke(_ invocation: (T) -> ()) {
         for delegate in self.delegates.allObjects {
             invocation(delegate as! T)
         }
