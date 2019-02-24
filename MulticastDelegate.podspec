@@ -21,7 +21,7 @@ A simple multicast delegate.
   spec.social_media_url = 'https://twitter.com/hershalle'
     
   spec.ios.deployment_target = '11.0'
-  spec.swift_version   = '4.2'
+  spec.swift_version   = '5.0'
   spec.source          = { :git => 'https://github.com/hershalle/MulticastDelegate.git' , :tag => spec.version.to_s }
   spec.source_files = "Sources"
     
