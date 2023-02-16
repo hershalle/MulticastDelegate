@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name             = 'MulticastDelegate'
-  spec.version          = '0.1.4'
+  spec.version          = '0.1.5'
   spec.summary          = 'A simple multicast delegate'
 
   spec.description      = <<-DESC
