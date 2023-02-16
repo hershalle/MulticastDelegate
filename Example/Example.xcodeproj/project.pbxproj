@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		9853945621935E0400251CC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9853945521935E0400251CC1 /* Assets.xcassets */; };
 		9853945921935E0400251CC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9853945721935E0400251CC1 /* LaunchScreen.storyboard */; };
 		985394612193628900251CC1 /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985394602193628900251CC1 /* ExampleService.swift */; };
+		E6A28F24299E3A9B00D79CBD /* TestMulticastDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A28F23299E3A9B00D79CBD /* TestMulticastDelegateViewController.swift */; };
+		E6A28F26299E3AFB00D79CBD /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A28F25299E3AFB00D79CBD /* Bindable.swift */; };
+		E6A28F28299E3B3800D79CBD /* MulticastBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A28F27299E3B3800D79CBD /* MulticastBindable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		985394602193628900251CC1 /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
 		C727F06FB2C8D82EA6B81F7D /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		D306CFB6A4019C44070EE8CC /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E6A28F23299E3A9B00D79CBD /* TestMulticastDelegateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMulticastDelegateViewController.swift; sourceTree = "<group>"; };
+		E6A28F25299E3AFB00D79CBD /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		E6A28F27299E3B3800D79CBD /* MulticastBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastBindable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,8 @@
 				9853945021935E0300251CC1 /* ViewController.swift */,
 				985394602193628900251CC1 /* ExampleService.swift */,
 				9853945221935E0300251CC1 /* Main.storyboard */,
+				E6A28F23299E3A9B00D79CBD /* TestMulticastDelegateViewController.swift */,
+				E6A28F29299E3B3D00D79CBD /* Bindable */,
 				9853945521935E0400251CC1 /* Assets.xcassets */,
 				9853945721935E0400251CC1 /* LaunchScreen.storyboard */,
 				9853945A21935E0400251CC1 /* Info.plist */,
@@ -80,6 +88,15 @@
 				0EE68FC1B187755A0882F394 /* Pods_Example.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6A28F29299E3B3D00D79CBD /* Bindable */ = {
+			isa = PBXGroup;
+			children = (
+				E6A28F25299E3AFB00D79CBD /* Bindable.swift */,
+				E6A28F27299E3B3800D79CBD /* MulticastBindable.swift */,
+			);
+			path = Bindable;
 			sourceTree = "<group>";
 		};
 		F6559118F3D8B9D2DE9546AB /* Pods */ = {
@@ -189,16 +206,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MulticastDelegate/MulticastDelegate.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MulticastDelegate.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -212,6 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A28F26299E3AFB00D79CBD /* Bindable.swift in Sources */,
+				E6A28F28299E3B3800D79CBD /* MulticastBindable.swift in Sources */,
+				E6A28F24299E3A9B00D79CBD /* TestMulticastDelegateViewController.swift in Sources */,
 				9853945121935E0300251CC1 /* ViewController.swift in Sources */,
 				985394612193628900251CC1 /* ExampleService.swift in Sources */,
 				9853944F21935E0300251CC1 /* AppDelegate.swift in Sources */,

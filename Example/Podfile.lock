@@ -1,5 +1,5 @@
 PODS:
-  - MulticastDelegate (0.1.0)
+  - MulticastDelegate (0.1.4)
 
 DEPENDENCIES:
   - MulticastDelegate (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MulticastDelegate: a188ce18d8aa2178fea846a658bd4d1d60973d32
+  MulticastDelegate: 7d625a7f0f1270ba1f3ddfa0cbf9c6fef5e3e0f8
 
 PODFILE CHECKSUM: 344ed764bf27cb3415df628f0e67dea4cc3e51af
 
-COCOAPODS: 1.6.0.rc.2
+COCOAPODS: 1.11.3

@@ -9,7 +9,7 @@
 import Foundation
 import MulticastDelegate
 
-protocol ExampleServiceDelegate: class {
+protocol ExampleServiceDelegate: AnyObject {
     func exampleService(_ service: ExampleService, outputMessage message: String)
 }
 
