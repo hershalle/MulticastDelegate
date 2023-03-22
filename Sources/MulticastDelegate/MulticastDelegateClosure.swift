@@ -1,3 +1,5 @@
+import Foundation
+
 public struct MulticastDelegateClosure<T> {
     private class Binder<T> {
         var action: (T) -> Void
