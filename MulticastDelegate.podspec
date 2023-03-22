@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name             = 'MulticastDelegate'
-  spec.version          = '0.1.5'
+  spec.version          = '0.1.6'
   spec.summary          = 'A simple multicast delegate'
 
   spec.description      = <<-DESC
@@ -23,7 +23,7 @@ A simple multicast delegate.
   spec.ios.deployment_target = '11.0'
   spec.swift_version   = '5.0'
   spec.source          = { :git => 'https://github.com/hershalle/MulticastDelegate.git' , :tag => spec.version.to_s }
-  spec.source_files = "Sources"
+  spec.source_files = "Sources/MulticastDelegate"
     
 
 end
